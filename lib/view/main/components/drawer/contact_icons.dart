@@ -22,7 +22,7 @@ class ContactIcon extends StatelessWidget {
               icon: SvgPicture.asset('assets/icons/linkedin.svg')),
           IconButton(
               onPressed: () {
-                launchUrl(Uri.parse('https://github.com/haricmoon'));
+                launchUrl(Uri.parse('https://github.com/harikrishna561'));
               },
               icon: SvgPicture.asset('assets/icons/github.svg')),
           const Spacer(),

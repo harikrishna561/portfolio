@@ -19,26 +19,38 @@ class ConnectButton extends StatelessWidget {
             height: 60,
             width: 150,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(defaultPadding),
-                gradient: LinearGradient(colors: [
-                  Colors.pink,
-                  Colors.blue.shade900,
-                ]),
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.blue,
-                      offset: Offset(0, -1),
-                      blurRadius: defaultPadding / 4),
-                  BoxShadow(
-                      color: Colors.red,
-                      offset: Offset(0, 1),
-                      blurRadius: defaultPadding / 4),
-                ]),
+              borderRadius: BorderRadius.circular(defaultPadding),
+              gradient: const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color(0xff141E30),
+                  Color(0xff243B55),
+                ],
+              ),
+              border: Border.all(
+                color: Colors.white.withOpacity(0.08),
+                width: 1,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xff00C6FF).withOpacity(0.30),
+                  blurRadius: 18,
+                  spreadRadius: 1,
+                  offset: const Offset(0, 6),
+                ),
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.25),
+                  blurRadius: 10,
+                  offset: const Offset(0, 4),
+                ),
+              ],
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Icon(
+                FaIcon(
                   FontAwesomeIcons.whatsapp,
                   color: Colors.greenAccent,
                   size: 15,

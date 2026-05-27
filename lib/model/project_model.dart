@@ -3,55 +3,114 @@ class Project {
   final String description;
   final String image;
   final String link;
-  Project(this.name, this.description, this.image, this.link);
+
+  Project(
+    this.name,
+    this.description,
+    this.image,
+    this.link,
+  );
 }
 
 List<Project> projectList = [
   Project(
-    'Coffee Application',
-    'Presenting "Coffee" - a Flutter UI application that invites you to indulge in a delightful coffee adventure. Immerse yourself in the world of rich aroma and flavor as you browse through an exquisite selection of specialty coffees. With a user-friendly interface, exploring different blends and discovering their unique details becomes a delightful experience.',
-    'assets/images/coffee.png',
-    'https://github.com/Hamad-Anwar/Coffe-Shop-Beautifull-UI',
+    'Meatonn - Meat Booking App',
+    "Meetonn is a user-friendly meat booking and delivery application designed to provide fresh, hygienic, and high-quality meat at customers’ doorsteps. The app allows users to browse meat categories, select preferred cuts, schedule delivery, and place orders seamlessly. It features real-time order tracking, secure online payments, and easy order management. Admin and vendor dashboards help manage inventory, pricing, and deliveries efficiently. Built with performance and scalability in mind, Meetonn ensures a smooth and reliable shopping experience for customers.",
+    'assets/images/meatonn.png',
+    'https://play.google.com/store/apps/details?id=in.meatonn',
+  ),
+
+  Project(
+    'Tadiboyina Matrimony App',
+    'A modern matrimony application built using Flutter with real-time chat functionality powered by Firebase. The application includes profile management, matchmaking features, premium subscription plans, secure payment integration, and in-app review functionality to improve user engagement and App Store ratings.',
+    'assets/images/matrimony.png',
+    'https://play.google.com/store/apps/details?id=com.tadiboyinamatrimony',
+  ),
+
+  Project(
+    'We Haul - Logistics Application',
+    'A logistics management platform developed for Shippers, Carriers, and Drivers using Flutter. The application includes route optimization, shipment tracking, live driver updates, and real-time logistics management using third-party APIs. Designed with scalable architecture and responsive UI for smooth operational workflows.',
+    'assets/images/wehaul.png',
+    'https://play.google.com/store/apps/details?id=com.logistics.shipper',
+  ),
+
+  Project(
+    'Wee Bus Booking Application',
+    'Wee Bus is an online bus ticket booking app that allows users to search routes, choose seats, and book tickets seamlessly. Built with a focus on performance, usability, and a smooth user experience.',
+    'assets/images/bus.png',
+    'https://play.google.com/store/apps/details?id=com.wee_bus_user_flutter',
+  ),
+
+  Project(
+    'Will Cart - Food Delivery Application',
+    'WillCard is a complete food ordering and delivery platform connecting users, restaurants, and delivery partners in one ecosystem. Users can explore restaurants, place orders, make secure payments, and track deliveries in real time. Restaurants manage menus, orders, and pricing through a dedicated panel, while delivery partners handle pickups and doorstep delivery efficiently. The app is designed for speed, reliability, and a smooth user experience across all roles.',
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.willcartfood',
+  ),
+
+  // Project(
+  //   'Flutter Portfolio Website',
+  //   'A fully responsive portfolio website created using Flutter Web to showcase professional experience, technical skills, and mobile application projects. Designed with modern animations, reusable widgets, and adaptive layouts for desktop, tablet, and mobile devices.',
+  //   'assets/images/portfolio.png',
+  //   'https://github.com/yourgithub/flutter-portfolio',
+  // ),
+  Project(
+    'Rumailah Application',
+    "Built and maintained “Rumailah,” a cross-platform coffee & juice ordering application using Flutter. Implemented responsive UI, API integrations, cart/order management, and optimized app performance for Android and iOS platforms.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.rumailah',
   ),
   Project(
-    'Car Controller Application UI',
-    'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
-    'assets/images/car.png',
-    'https://github.com/Hamad-Anwar/Car-Controller-Getx-Flutter',
+    'Stash Box Application',
+    "Developed and maintained “Stash Box,” a Flutter-based rental and marketplace application for buying, selling, and renting products. Implemented user-friendly interfaces, secure transactions, and seamless connectivity for a modern shopping experience.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.stashbox',
   ),
   Project(
-      'Neumorphic Clockify',
-      'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
-      'assets/images/alarm.jpg',
-      'https://github.com/Hamad-Anwar/Neumorphic-Analog-Clockify'),
+    'Samskar Student & Parent Application',
+    "Developed and maintained “Samskar,” a Flutter-based application for students and parents to manage academic information, communicate with teachers, and track progress. Implemented user-friendly interfaces, secure transactions, and seamless connectivity for a modern educational experience.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.samaskarinternationalschool',
+  ),
   Project(
-      'CUI Aider',
-      'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
-      'assets/images/cui.png',
-      'https://github.com/Hamad-Anwar/'),
+    'Lalitha shopping mall',
+    "Lalitha Shopping Mall is a modern e-commerce and shopping application developed using Flutter to deliver a seamless online shopping experience for customers. The application provides users with access to a wide range of products across multiple categories with an intuitive and user-friendly interface designed for smooth navigation and fast performance.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.lalithashoppingmall',
+  ),
+
   Project(
-      'Flutter Music Streaming Application',
-      'A Flutter music streaming application that allows users to play audio files from local storage. The app features a beautiful neumorphic UI design and provides a smooth user experience for browsing and playing music.',
-      'assets/images/player.png',
-      'https://github.com/Hamad-Anwar/Neumorphic-Music_Player-Flutter'),
+    'E-Clinic User Application',
+    "E-Clinic User Application is a modern healthcare application developed using Flutter to provide seamless telemedicine services for patients. The application allows users to schedule appointments, consult with doctors, and manage their health records efficiently.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.cm.ecliniconuser',
+  ),
+
   Project(
-      'Food Recipe App',
-      'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
-      'assets/images/recipe.png',
-      'https://github.com/Hamad-Anwar/Food-Recipe-App-Flutter'),
+    'ShareTask Application',
+    "ShareTask Application is a modern task management application developed using Flutter to provide seamless collaboration services for users. The application allows users to create tasks, assign them to team members, and track progress efficiently.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.sharetask.app',
+  ),
+
   Project(
-      'Task Sync Pro',
-      'Welcome to the Beautiful Task Scheduler App repository! This Flutter-based task management application combines elegant design with a robust backend, ensuring a seamless and organized task management experience. From stunning UI to real-time synchronization, this app has you covered.',
-      'assets/images/task.png',
-      'https://github.com/Hamad-Anwar/Task-Sync-Pro-Flutter'),
+    'ShareDoc Application',
+    "ShareDoc Application is a modern document management application developed using Flutter to provide seamless collaboration services for users. The application allows users to create, share, and manage documents efficiently.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.sharedocs.app',
+  ),
   Project(
-      'Flutter Chat Application with Firebase',
-      'Welcome to our innovative Flutter chat application! This feature-rich messaging platform allows users to connect and communicate seamlessly through text and images. The app is built using Flutter for the frontend and integrates with Firebase for backend services, including authentication, real-time database, and storage.',
-      'assets/images/chat.png',
-      'https://github.com/Hamad-Anwar/Messenger-App-Backend-Firebase'),
-  Project(
-      'Doctor Appointment Application',
-      'Introducing the extraordinary "Doctor Appointment System" - a state-of-the-art Flutter UI application that redefines healthcare accessibility and efficiency. Seamlessly crafted, this app empowers users to effortlessly select doctors based on categories, engage in smooth messaging, and access detailed profiles.',
-      'assets/images/doctor.png',
-      'https://github.com/Hamad-Anwar/Doctor-Appointment-Application-UI'),
+    'DUROXZ: Rewards & Products Application',
+    "DUROXZ is a modern rewards and products application developed using Flutter to provide seamless shopping experience for users. The application allows users to browse products, earn rewards, and make purchases efficiently.",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.duroxz',
+  ),
+
+   Project(
+    'Nakshatra Calendar',
+    "Nakshatra Calendar is a comprehensive Flutter-based mobile application developed to provide users with accurate Hindu calendar information, Vedic astrology insights, and daily auspicious timings throughout the year. The application serves as a smart success planner, helping users identify favorable dates and muhurtham timings for important events, meetings, ceremonies, and personal activities based on Hindu traditions and Vedic Sastras",
+    'assets/images/willcart.png',
+    'https://play.google.com/store/apps/details?id=com.nakshatra',
+  ),
 ];
+
