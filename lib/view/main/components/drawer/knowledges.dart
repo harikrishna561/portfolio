@@ -18,9 +18,61 @@ class Knowledges extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
-        KnowledgeText(knowledge: 'Flutter, Dart'),
-        KnowledgeText(knowledge: 'Core Java,Android,SQLlite'),
-        KnowledgeText(knowledge: 'Git, Github'),
+        KnowledgeText(
+          knowledge: 'Flutter • Dart',
+        ),
+        KnowledgeText(
+          knowledge: 'Kotlin • Java • XML • Swift',
+        ),
+        KnowledgeText(
+          knowledge: 'GetX • Bloc • Cubit',
+        ),
+        KnowledgeText(
+          knowledge: 'Clean Architecture',
+        ),
+        KnowledgeText(
+          knowledge: 'MVVM Architecture',
+        ),
+        KnowledgeText(
+          knowledge: 'Google Maps',
+        ),
+        KnowledgeText(
+          knowledge: 'Background Location Services',
+        ),
+        KnowledgeText(
+          knowledge: 'SQLite • Firebase Firestore ',
+        ),
+        KnowledgeText(
+          knowledge: 'Git • GitHub • Play Store • App Store',
+        ),
+        KnowledgeText(
+          knowledge: 'Android Studio • VS Code • Xcode',
+        ),
+        KnowledgeText(
+          knowledge: 'Razorpay • PhonePe',
+        ),
+        KnowledgeText(
+          knowledge: 'In-App Purchases • In-App Reviews',
+        ),
+        KnowledgeText(
+          knowledge: 'Push Notifications',
+        ),
+        KnowledgeText(
+          knowledge: 'Firebase Cloud Messaging (FCM)',
+        ),
+        KnowledgeText(
+          knowledge: 'Responsive UI • REST APIs',
+        ),
+        KnowledgeText(
+          knowledge: 'GitHub Copilot • Cursor AI',
+        ),
+        KnowledgeText(knowledge: 'Python • FastAPI'),
+        KnowledgeText(knowledge: 'Generative AI • ChatGPT'),
+        KnowledgeText(knowledge: 'OpenAI API Gemini AI Claude AI'),
+
+KnowledgeText(knowledge: 'LangChain'),
+KnowledgeText(knowledge: 'Prompt Engineering'),
+KnowledgeText(knowledge: 'AI Chatbot Development'),
       ],
     );
   }

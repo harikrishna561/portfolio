@@ -62,26 +62,26 @@ class MySKills extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         AnimatedLinearProgressIndicator(
-          percentage: 0.9,
+          percentage: 0.95,
           title: 'Flutter',
           image: 'assets/icons/flutter.png',
         ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.9, title: 'Dart', image: 'assets/icons/dart.png'),
+            percentage: 0.90, title: 'Dart', image: 'assets/icons/dart.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.5,
+            percentage: 0.90,
             title: 'Firebase',
             image: 'assets/icons/firebase.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.2, title: 'Sqlite', image: 'assets/icons/dart.png'),
+            percentage: 0.50, title: 'Sqlite', image: 'assets/icons/dart.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.8,
+            percentage: 0.95,
             title: 'Responsive Design',
             image: 'assets/icons/flutter.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.2, title: 'Bloc', image: 'assets/icons/bloc.png'),
+            percentage: 0.90, title: 'Bloc', image: 'assets/icons/bloc.png'),
         AnimatedLinearProgressIndicator(
-            percentage: 0.80, title: 'Getx', image: 'assets/icons/dart.png'),
+            percentage: 0.90, title: 'Getx', image: 'assets/icons/dart.png'),
       ],
     );
   }
