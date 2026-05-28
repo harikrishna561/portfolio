@@ -14,6 +14,8 @@ class AnimatedDescriptionText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isMobile = Responsive.isMobile(context);
+
     return TweenAnimationBuilder<double>(
       tween: Tween<double>(
         begin: start,
@@ -22,26 +24,30 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 600),
       curve: Curves.easeInOut,
       builder: (context, value, child) {
-        return SizedBox(
-          width: Responsive.isDesktop(context)
-              ? 700
-              : Responsive.isTablet(context)
-                  ? 600
-                  : double.infinity,
-          child: Text(
-            'Flutter Developer with 4+ years of experience in building scalable and high-performance cross-platform mobile applications for Android and iOS. Skilled in Flutter, Dart, REST APIs, Firebase, GetX, BLoC, and Cubit with expertise in creating modern UI/UX designs and responsive applications. Experienced in Android development using Java and Kotlin with a strong foundation in Computer Science and software architecture.',
-            textAlign: Responsive.isMobile(context)
-                ? TextAlign.center
-                : TextAlign.start,
-            maxLines: Responsive.isMobile(context) ? 8 : 5,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              color: Colors.white70,
-              fontSize: value,
-              height: 1.8,
-              letterSpacing: 0.5,
-              wordSpacing: 1.5,
-              fontWeight: FontWeight.w400,
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: Responsive.isDesktop(context)
+                  ? 700
+                  : Responsive.isTablet(context)
+                      ? 600
+                      : MediaQuery.of(context).size.width,
+            ),
+            child: Text(
+              'Flutter Developer with 4+ years of experience building scalable and reliable mobile applications for Android and iOS. Strong hands-on expertise in Flutter, Dart, Java, Firebase, REST APIs, and payment gateway integrations. Experienced in complete app lifecycle management, including development, testing, deployment, and store releases. Known for clean coding practices, performance optimization, and delivering production-ready solutions aligned with business goals.',
+              textAlign:
+                  isMobile ? TextAlign.center : TextAlign.start,
+              softWrap: true,
+              overflow: TextOverflow.visible,
+              style: TextStyle(
+                color: Colors.white70,
+                fontSize: isMobile ? value - 3 : value,
+                height: 1.7,
+                letterSpacing: 0.3,
+                wordSpacing: 1,
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ),
         );
