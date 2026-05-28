@@ -82,6 +82,8 @@ class MySKills extends StatelessWidget {
             percentage: 0.90, title: 'Bloc', image: 'assets/icons/bloc.png'),
         AnimatedLinearProgressIndicator(
             percentage: 0.90, title: 'Getx', image: 'assets/icons/dart.png'),
+     
+     
       ],
     );
   }

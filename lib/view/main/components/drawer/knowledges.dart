@@ -69,10 +69,9 @@ class Knowledges extends StatelessWidget {
         KnowledgeText(knowledge: 'Python • FastAPI'),
         KnowledgeText(knowledge: 'Generative AI • ChatGPT'),
         KnowledgeText(knowledge: 'OpenAI API Gemini AI Claude AI'),
-
-KnowledgeText(knowledge: 'LangChain'),
-KnowledgeText(knowledge: 'Prompt Engineering'),
-KnowledgeText(knowledge: 'AI Chatbot Development'),
+        KnowledgeText(knowledge: 'LangChain'),
+        KnowledgeText(knowledge: 'Prompt Engineering'),
+        KnowledgeText(knowledge: 'AI Chatbot Development'),
       ],
     );
   }
